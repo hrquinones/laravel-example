@@ -2,7 +2,7 @@
 
 ## Contenido
 
-Este proyecto se uso como workshop de buenas prácticas
+Este proyecto se uso como workshop de buenas prácticas en PHP
 
 
 *¡Nunca te rindas! Siempre debes buscar superarte a ti mismo y nunca dejar de entrenar.
@@ -134,10 +134,17 @@ Comando para crear un modelo:
 Se crea el archivo en /app
 
 ### 1.4 Crear servicio
-Se recomienda crear la carpeta "app/Services" y crear las clases dentro de esta
-Las clases deben seguir 
+Se recomienda crear la carpeta "app/Services" y crear las clases dentro de ésta
+Las clases deben contener toda la logica de negocio de tu aplicacion
+- Tratar de usar algun patron de diseño 
+- Tratar de usar los principios SOLID
+- Se puede comenzar con algo pequeño y luego ir agregando funcionalidades
+- No tengas miedro de refactorizar si te das cuenta que puedes hacerlo mejor!
 
 ### 1.5 Crear controlador
+
+En la capa de controladores, agregar logica de validaciones e inyectar las clases de servicio que necesites
+Evitar agregar logica de negocio, dejar esto en la capa de servicio
 
 Comando para crear controlador
 

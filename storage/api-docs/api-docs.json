@@ -1,0 +1,124 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel Example API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/drivers": {
+            "get": {
+                "tags": [
+                    "configuration"
+                ],
+                "summary": "Get PDO driver",
+                "description": "Mostrar los driver PDOs instalados",
+                "operationId": "9479259015b75c335be1148c361b7433",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/mediador": {
+            "get": {
+                "tags": [
+                    "mediador"
+                ],
+                "summary": "Get mediadores",
+                "description": "Mostrar todos los mediadores",
+                "operationId": "173e0681c1905372404339f82a503845",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/mediador/{id}": {
+            "get": {
+                "tags": [
+                    "mediador"
+                ],
+                "summary": "Get mediadores by Id",
+                "description": "Mediador por Id",
+                "operationId": "3324b3521607948d8f322c76ad61ea4e",
+                "parameters": [
+                    {
+                        "parameter": "id",
+                        "name": "id",
+                        "in": "path",
+                        "description": "parameter by Id Mediator. Set default Lionel Messi",
+                        "schema": {
+                            "type": "string",
+                            "default": "213d18e8-27be-48af-9e67-b1b1c4a96575"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/sorteo": {
+            "post": {
+                "tags": [
+                    "mediador"
+                ],
+                "summary": "Sortear mediador",
+                "description": "Sortea un mediador o un super mediador",
+                "operationId": "8b126eb6528a8077e032070e068eafbf",
+                "requestBody": {
+                    "description": "Request Body Description",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/api/super-heroe/search/{name}": {
+            "get": {
+                "tags": [
+                    "mediador"
+                ],
+                "summary": "Get super heroe por nombre",
+                "description": "Mostrar todos los super heroes",
+                "operationId": "178e5a9befa65039bbb35235f89f6913",
+                "parameters": [
+                    {
+                        "parameter": "name",
+                        "name": "name",
+                        "in": "path",
+                        "description": "parameter by name super-hero",
+                        "schema": {
+                            "type": "string",
+                            "default": "batman"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    }
+}

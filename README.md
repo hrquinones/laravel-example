@@ -26,6 +26,10 @@ Este proyecto se uso como workshop de buenas prácticas en PHP
     composer create-project laravel/laravel laravel-example
 ```
 
+```bash
+    php artisan key:generate
+```
+
 Una vez credo el proyecto, se recomienda seguir estos pasos
 1. Configurar conexion a base de datos
 2. Crear Tabla
